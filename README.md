@@ -96,7 +96,7 @@ set -a && source .env && set +a
 
 `scripts/config.py` 之 `RAW_CSV` 指向原始 panel 檔路徑，請自行替換為自有資料，
 或依 `01_clean_panel.py` 所需欄位（見 `config.py` 之欄位常數）自建同格式輸入。
-如需研究資料以進行重製，請聯繫作者並依平台資料使用規範辦理。
+如需研究資料以進行重製，請聯繫作者（Andrew W，Andrewegg.hs13@nycu.edu.tw）並依平台資料使用規範辦理。
 
 ## 可重現性
 

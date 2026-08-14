@@ -7,9 +7,10 @@ abstract: >-
   分解課程屬性之直接效果與跨課程外溢效果。另含 LLM 雙模型 Bloom 認知難度標記流程。
 type: software
 authors:
-  - family-names: "<姓>"
-    given-names: "<名>"
-    affiliation: "<校名／系所>"
+  - given-names: "Andrew"
+    family-names: "W"
+    affiliation: "國立陽明交通大學"
+    email: "Andrewegg.hs13@nycu.edu.tw"
 license: MIT
 date-released: "2026-08-14"
 keywords:
