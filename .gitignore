@@ -1,0 +1,46 @@
+# ---- 研究資料（不公開）----
+data/
+outputs/
+figures/
+*.csv
+*.npy
+*.xlsx
+*.xls
+*.dta
+*.parquet
+!requirements.txt
+
+# ---- 字型（授權另計）----
+fonts/*.otf
+fonts/*.ttf
+fonts/*.ttc
+
+# ---- 金鑰 ----
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---- 編輯器 / 系統 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.~lock.*#
+*.bak
+*.tmp
+
+# ---- 模型快取 ----
+.cache/
+models/
+sentence-transformers/

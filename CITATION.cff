@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "若您使用本程式碼，請依下列資訊引用。"
+title: "語意空間計量分析 pipeline：線上學分課程市場之競爭與外溢效應"
+abstract: >-
+  碩士論文分析程式碼。以 SBERT 將 ewant 育網 SOS 暑期線上學分課程（2021-2025，175 門）
+  之課程文本轉為語意向量，建構語意鄰近空間權重矩陣，並估計 Panel Spatial Durbin Model，
+  分解課程屬性之直接效果與跨課程外溢效果。另含 LLM 雙模型 Bloom 認知難度標記流程。
+type: software
+authors:
+  - family-names: "<姓>"
+    given-names: "<名>"
+    affiliation: "<校名／系所>"
+license: MIT
+date-released: "2026-08-14"
+keywords:
+  - spatial econometrics
+  - spatial Durbin model
+  - SBERT
+  - sentence embeddings
+  - large language models
+  - Bloom's taxonomy
+  - MOOC
+  - online credit courses
+  - spillover effects
