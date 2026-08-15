@@ -32,7 +32,8 @@
 | `scripts/01_clean_panel.py` | **資料前處理**：建「課程–開課期別」面板、依變項與控制變項計算、敘述統計、VIF |
 | `scripts/02_embed_text.py` | **SBERT 向量轉換**：文本清理 + `paraphrase-multilingual-MiniLM-L12-v2` 編碼（175×384） |
 | `scripts/A1_A2_apply.py` | 補算學分數 / 學分費欄（1 學分 = 18 學習時數；每學分 NT$750） |
-| `prompts/A3_bloom_prompt.md` | **LLM 提示詞規格**：Bloom 三維標記之 system / user prompt、CoT 步驟、參數與互驗設計 |
+| `prompts/A3_bloom_prompt.md` | **LLM 提示詞設計文件**：Bloom 三維標記之設計原則、CoT 步驟、few-shot 草案與互驗設計 |
+| `prompts/A3_reproducibility_package.md` | **LLM 標記重現包**：逐字提示詞（自 `A3_run_bloom.py` 常數抽出）、推論參數、解析規則、一致性指標與爭議觀察仲裁協議。**以此檔為準** |
 | `scripts/A3_run_bloom.py` | **LLM 提示詞腳本**：呼叫 Claude 與 GPT 雙模型標記、一致性（Kappa / ICC / MAE）與歧異仲裁 |
 | `scripts/03_build_weights.py` | **空間權重矩陣**：逐年度分塊、kNN 列標準化語意 W（跨年度權重恆為 0） |
 | `scripts/04_spatial_models.py` | **空間計量主模型**：Moran's I、LM 檢定、OLS/SAR/SEM/SDM、direct-indirect-total 分解 |
