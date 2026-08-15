@@ -10,6 +10,9 @@ figures/
 *.parquet
 !requirements.txt
 
+# 重現紀錄之結果表（非原始研究資料，僅為論文表格對應之彙總數值）
+!replication/**/*.csv
+
 # ---- 字型（授權另計）----
 fonts/*.otf
 fonts/*.ttf

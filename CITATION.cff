@@ -1,25 +1,36 @@
 cff-version: 1.2.0
 message: "若您使用本程式碼，請依下列資訊引用。"
-title: "語意空間計量分析 pipeline：線上學分課程市場之競爭與外溢效應"
+title: "語意空間計量分析 pipeline：線上學分課程生態之語意鄰近關聯與外溢效果"
 abstract: >-
   碩士論文分析程式碼。以 SBERT 將 ewant 育網 SOS 暑期線上學分課程（2021-2025，175 門）
-  之課程文本轉為語意向量，建構語意鄰近空間權重矩陣，並估計 Panel Spatial Durbin Model，
-  分解課程屬性之直接效果與跨課程外溢效果。另含 LLM 雙模型 Bloom 認知難度標記流程。
+  之課程文本轉為語意向量，建構語意鄰近空間權重矩陣，並估計堆疊式空間杜賓模型（Spatial Durbin Model），
+  分解課程屬性之直接效果與跨課程外溢效果。另含 LLM 雙模型課程文本認知要求（修訂版布魯姆分類法）標記流程。
 type: software
 authors:
-  - given-names: "Andrew"
-    family-names: "W"
-    affiliation: "國立陽明交通大學"
+  - given-names: "Chi-Han"
+    family-names: "Wang"
+    alias: "王祈翰"
+    affiliation: "國立陽明交通大學教育研究所"
     email: "Andrewegg.hs13@nycu.edu.tw"
 license: MIT
-date-released: "2026-08-14"
+date-released: "2026-08-15"
 keywords:
   - spatial econometrics
   - spatial Durbin model
   - SBERT
   - sentence embeddings
   - large language models
-  - Bloom's taxonomy
+  - Bloom's revised taxonomy
   - MOOC
   - online credit courses
   - spillover effects
+references:
+  - type: thesis
+    title: "基於大型語言模型與語意空間計量模型探討線上學分課程生態之語意鄰近關聯與外溢效果"
+    authors:
+      - given-names: "Chi-Han"
+        family-names: "Wang"
+    institution:
+      name: "國立陽明交通大學教育研究所"
+    thesis-type: "碩士論文"
+    year: 2026

@@ -1,7 +1,7 @@
-# 語意空間計量分析：線上學分課程市場之競爭與外溢效應
+# 語意空間計量分析：線上學分課程生態之語意鄰近關聯與外溢效果
 
-本 repo 為碩士論文《基於大型語言模型與語意空間計量模型探討線上學分課程市場之競爭與外溢效應》
-之**完整分析程式碼**，供學術重製與方法檢驗之用。
+本 repo 為碩士論文《基於大型語言模型與語意空間計量模型探討線上學分課程生態之語意鄰近關聯與外溢效果》
+（王祈翰，2026，國立陽明交通大學教育研究所）之**完整分析程式碼**，供學術重製與方法檢驗之用。
 
 研究對象為 ewant 育網 SOS 暑期線上學分課程（2021–2025，共 175 門），
 以 SBERT 將課程文本轉為語意向量、據以建構「語意鄰近」空間權重矩陣，
@@ -15,7 +15,7 @@
 原始 Moodle 課程 panel
   └─ 01_clean_panel.py      資料前處理：面板建構、變項計算、敘述統計、VIF
        └─ 02_embed_text.py  文本清理 → SBERT 384 維語意向量
-            ├─ A3_run_bloom.py   LLM 雙模型標記 Bloom 認知難度三維（Claude × GPT 互驗）
+            ├─ A3_run_bloom.py   LLM 雙模型標記 Bloom 認知要求三維（Claude × GPT 互驗）
             └─ 03_build_weights.py  逐年度餘弦相似度 → kNN 列標準化語意權重矩陣 W
                  └─ 04_spatial_models.py  Moran's I、LM 檢定、OLS/SAR/SEM/SDM、效果分解
                       ├─ 05_robustness.py      穩健性檢驗（k、DV、樣本、FE、控制變項）
@@ -43,6 +43,7 @@
 | `scripts/06_figures.py` | 論文圖 4-1～4-7 之 300dpi 產製 |
 | `scripts/run_all.py` | 一鍵依序執行 01 → 06 |
 | `replication/k4_rerun_20260806/` | **k = 4 重現紀錄**：以論文最終設定重跑表 4-3 / 4-4 / 4-6，含逐數字比對報告 |
+| `replication/residual_moran_20260815/` | **殘差 Moran's I 重跑紀錄**：十個候選 k 之依變項與 OLS 殘差 Moran's I，對應論文表 4-4 之兩個新增欄位 |
 
 ## 環境需求
 
@@ -97,7 +98,7 @@ set -a && source .env && set +a
 
 `scripts/config.py` 之 `RAW_CSV` 指向原始 panel 檔路徑，請自行替換為自有資料，
 或依 `01_clean_panel.py` 所需欄位（見 `config.py` 之欄位常數）自建同格式輸入。
-如需研究資料以進行重製，請聯繫作者（Andrew W，Andrewegg.hs13@nycu.edu.tw）並依平台資料使用規範辦理。
+如需研究資料以進行重製，請聯繫作者（王祈翰 Chi-Han Wang，Andrewegg.hs13@nycu.edu.tw）並依平台資料使用規範辦理。
 
 ## 可重現性
 
